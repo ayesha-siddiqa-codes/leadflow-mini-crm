@@ -585,41 +585,49 @@ footer {
   }
 }
 
+
 @media (max-width: 700px) {
   .sidebar {
-  position: static;
-  width: 100%;
-  padding: 17px 18px;
-  border-right: none;
-  border-bottom: 1px solid #263449;
-  display: flex;
-  flex-direction: column;
-}
+    position: relative;
+    width: 100%;
+    padding: 17px 18px;
+    border-right: none;
+    border-bottom: 1px solid #263449;
+    display: flex;
+    flex-direction: column;
+  }
+
   .brand {
     margin: 0 0 16px;
   }
 
   .menu-label {
-  display: none;
-}
+    display: none;
+  }
 
-.sidebar-bottom {
-  display: flex;
-  margin-top: 16px;
-  padding-top: 12px;
-  border-top: 1px solid #263449;
-}
-
+  /* Keep the navigation at the top */
   .sidebar nav {
     display: flex;
     gap: 6px;
     overflow-x: auto;
+    padding-bottom: 4px;
   }
 
   .nav-item {
     flex: 0 0 auto;
     padding: 10px 12px;
     font-size: 11px;
+    white-space: nowrap;
+  }
+
+  /* Profile and logout appear at the end of the sidebar */
+  .sidebar-bottom {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 16px;
+    padding: 14px 3px 0;
+    border-top: 1px solid #263449;
   }
 
   .main-content {
@@ -659,6 +667,7 @@ footer {
   }
 
   .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
     margin-bottom: 23px;
   }
@@ -693,6 +702,7 @@ footer {
     line-height: 1.5;
   }
 }
+
 
 @media (prefers-reduced-motion: reduce) {
   *,
