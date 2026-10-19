@@ -598,10 +598,16 @@ footer {
     margin: 0 0 16px;
   }
 
-  .menu-label,
-  .sidebar-bottom {
-    display: none;
-  }
+  .menu-label {
+  display: none;
+}
+
+.sidebar-bottom {
+  display: flex;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #263449;
+}
 
   .sidebar nav {
     display: flex;
