@@ -930,7 +930,9 @@ button {
     border-right: none;
     border-bottom: 1px solid #263449;
   }
-
+.sidebar nav {
+  order: 1;
+}
   .brand {
     margin: 0 0 16px 5px;
   }
@@ -954,16 +956,19 @@ button {
   }
 
   /* Keep the profile and logout at the bottom of the sidebar */
-  .sidebar-bottom {
-    position: static;
-    display: flex;
-    align-items: center;
-    gap: 11px;
-    width: 100%;
-    margin-top: 16px;
-    padding: 12px 3px 0;
-    border-top: 1px solid #263449;
-  }
+  
+.sidebar-bottom {
+  position: static;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px 3px 0;
+  border-top: 1px solid #263449;
+  order: 2;
+}
+
 
   .profile-info {
     flex: 1;
