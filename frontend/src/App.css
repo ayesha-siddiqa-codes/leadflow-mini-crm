@@ -1065,3 +1065,127 @@ button:hover {
 .leads-table-container {
   animation: fadeInTable 0.5s ease-in-out;
 }
+
+/* Improved mobile layout for LeadFlow */
+@media (max-width: 520px) {
+  body {
+    min-width: 320px;
+  }
+
+  .login-page {
+    padding: 16px;
+    align-items: center;
+  }
+
+  .login-card {
+    padding: 25px 20px;
+    border-radius: 14px;
+  }
+
+  .login-card h1 {
+    font-size: 26px;
+  }
+
+  .login-brand {
+    margin-bottom: 24px;
+  }
+
+  .sidebar {
+    padding: 14px 12px;
+  }
+
+  .brand {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+
+  .sidebar nav {
+    padding-bottom: 4px;
+  }
+
+  .nav-item {
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  .main-content {
+    padding: 20px 12px;
+    min-width: 0;
+  }
+
+  .topbar {
+    gap: 14px;
+  }
+
+  .topbar .primary-button {
+    width: 100%;
+  }
+
+  .welcome-banner {
+    padding: 20px 16px;
+    gap: 10px;
+  }
+
+  .banner-decoration {
+    display: none;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 14px 11px;
+  }
+
+  .stat-top {
+    align-items: flex-start;
+    font-size: 10px;
+  }
+
+  .stat-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .stat-number {
+    font-size: 26px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .leads-section,
+  .form-card {
+    padding: 15px 10px;
+  }
+
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .form-grid input,
+  .notes-field textarea,
+  .search-input,
+  .status-filter {
+    font-size: 16px;
+  }
+
+  .table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 650px;
+  }
+
+  footer {
+    padding-bottom: 20px;
+  }
+}
