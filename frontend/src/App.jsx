@@ -791,7 +791,7 @@ setToken(data.token);
 
         <footer>
           <span>LeadFlow CRM</span>
-          <span>Built by Ayesha Siddiqa · Future Interns Task 2</span>
+          <span>Built by Ayesha Siddiqa</span>
         </footer>
       </main>
     </div>
